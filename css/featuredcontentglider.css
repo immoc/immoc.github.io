@@ -1,0 +1,45 @@
+.glidecontentwrapper{
+position: relative; /* Do not change this value */
+overflow: hidden;
+float:right; width:230px; height: 105px;
+}
+/*
+	Total wrapper width: 350px+5px+5px=360px
+	Or width of wrapper div itself plus any left and right CSS border and padding
+	Adjust related containers below according to comments
+*/
+
+
+.glidecontent{ /*style for each glide content DIV within wrapper.*/
+position: absolute; /* Do not change this value */
+visibility: hidden;
+width: 225px;
+background: url(../images/testimonial_bg.gif) repeat-x;
+}
+/*
+ Total glidecontent width: 330px+10px+10px=350px
+	Or width of wrapper div itself (not counting wrapper border/padding)
+*/
+
+.glidecontenttoggler{ /*style for DIV used to contain toggler links. */
+}
+/*
+ Total contenttoggler width: 350px+5px+5px=360px
+	Or total width of wrapper div (counting wrapper border/padding)
+*/
+
+.glidecontenttoggler a{ /*style for every navigational link within toggler */
+}
+
+.glidecontenttoggler a.selected{ /*style for selected page's toggler link. ".selected" class auto generated! */
+background: #E4EFFA;
+color: black;
+}
+
+.glidecontenttoggler a:hover{
+}
+
+.glidecontenttoggler a.prev, .glidecontenttoggler a.next { background: url(../images/nav_arrow.gif) no-repeat 0 -13px; width:23px; height:13px; display:block; float:left; text-indent:-999em; font-size:0; overflow:hidden; }
+.glidecontenttoggler a.next { background-position:-23px -13px; margin-left:5px; }
+.glidecontenttoggler a.prev:hover { background-position:0 0px; }
+.glidecontenttoggler a.next:hover { background-position:-23px 0; }
